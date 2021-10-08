@@ -32,11 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label_answer = new System.Windows.Forms.Label();
+            this.button_solution = new System.Windows.Forms.Button();
+            this.textBox_firstNum = new System.Windows.Forms.TextBox();
+            this.textBox_secondNum = new System.Windows.Forms.TextBox();
+            this.textBox_thirdNum = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -82,57 +82,65 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Третье слово";
             // 
-            // label5
+            // label_answer
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(50, 250);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 25);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Ответ: ";
+            this.label_answer.AutoSize = true;
+            this.label_answer.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_answer.Location = new System.Drawing.Point(50, 250);
+            this.label_answer.Name = "label_answer";
+            this.label_answer.Size = new System.Drawing.Size(71, 25);
+            this.label_answer.TabIndex = 4;
+            this.label_answer.Text = "Ответ: ";
             // 
-            // button1
+            // button_solution
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(175, 300);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Решить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_solution.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_solution.Location = new System.Drawing.Point(175, 300);
+            this.button_solution.Name = "button_solution";
+            this.button_solution.Size = new System.Drawing.Size(150, 50);
+            this.button_solution.TabIndex = 5;
+            this.button_solution.Text = "Решить";
+            this.button_solution.UseVisualStyleBackColor = true;
+            this.button_solution.Click += new System.EventHandler(this.button_solution_Click);
             // 
-            // textBox1
+            // textBox_firstNum
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 23);
-            this.textBox1.TabIndex = 6;
+            this.textBox_firstNum.Location = new System.Drawing.Point(200, 90);
+            this.textBox_firstNum.MaxLength = 20;
+            this.textBox_firstNum.Name = "textBox_firstNum";
+            this.textBox_firstNum.Size = new System.Drawing.Size(150, 23);
+            this.textBox_firstNum.TabIndex = 6;
+            this.textBox_firstNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_firstNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress);
             // 
-            // textBox2
+            // textBox_secondNum
             // 
-            this.textBox2.Location = new System.Drawing.Point(200, 140);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 23);
-            this.textBox2.TabIndex = 7;
+            this.textBox_secondNum.Location = new System.Drawing.Point(200, 140);
+            this.textBox_secondNum.Name = "textBox_secondNum";
+            this.textBox_secondNum.Size = new System.Drawing.Size(150, 23);
+            this.textBox_secondNum.TabIndex = 7;
+            this.textBox_secondNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_secondNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress);
             // 
-            // textBox3
+            // textBox_thirdNum
             // 
-            this.textBox3.Location = new System.Drawing.Point(200, 190);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 23);
-            this.textBox3.TabIndex = 8;
+            this.textBox_thirdNum.Location = new System.Drawing.Point(200, 190);
+            this.textBox_thirdNum.Name = "textBox_thirdNum";
+            this.textBox_thirdNum.Size = new System.Drawing.Size(150, 23);
+            this.textBox_thirdNum.TabIndex = 8;
+            this.textBox_thirdNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_thirdNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 361);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox_thirdNum);
+            this.Controls.Add(this.textBox_secondNum);
+            this.Controls.Add(this.textBox_firstNum);
+            this.Controls.Add(this.button_solution);
+            this.Controls.Add(this.label_answer);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -155,11 +163,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label_answer;
+        private System.Windows.Forms.Button button_solution;
+        private System.Windows.Forms.TextBox textBox_firstNum;
+        private System.Windows.Forms.TextBox textBox_secondNum;
+        private System.Windows.Forms.TextBox textBox_thirdNum;
     }
 }
 
