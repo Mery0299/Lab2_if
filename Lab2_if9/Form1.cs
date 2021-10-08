@@ -52,5 +52,21 @@ namespace Lab2_if9
                 e.Handled = true;
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            textBox_firstNum.Text = Properties.Settings.Default.firstNum;
+            textBox_secondNum.Text = Properties.Settings.Default.secondNum;
+            textBox_thirdNum.Text = Properties.Settings.Default.thirdNum;
+        }
+
+        //сохранение данных при закрытии приложения
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.firstNum = textBox_firstNum.Text;
+            Properties.Settings.Default.secondNum = textBox_secondNum.Text;
+            Properties.Settings.Default.thirdNum = textBox_thirdNum.Text;
+            Properties.Settings.Default.Save();
+        }
     }
 }
