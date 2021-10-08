@@ -60,7 +60,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 25);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Первое слово";
+            this.label2.Text = "Первое число";
             // 
             // label3
             // 
@@ -70,7 +70,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Второе слово";
+            this.label3.Text = "Второе число";
             // 
             // label4
             // 
@@ -80,7 +80,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Третье слово";
+            this.label4.Text = "Третье число";
             // 
             // label_answer
             // 
@@ -88,9 +88,8 @@
             this.label_answer.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_answer.Location = new System.Drawing.Point(50, 250);
             this.label_answer.Name = "label_answer";
-            this.label_answer.Size = new System.Drawing.Size(71, 25);
+            this.label_answer.Size = new System.Drawing.Size(0, 25);
             this.label_answer.TabIndex = 4;
-            this.label_answer.Text = "Ответ: ";
             // 
             // button_solution
             // 

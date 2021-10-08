@@ -5,10 +5,10 @@ namespace Lab2_if9
     public class Logic
     {
         //метод решения задания
-        public static float Solution(float[] nums)
+        public static string Solution(float[] nums)
         {
             Array.Sort(nums);
-            return nums[0] * nums[1];
+            return $"Ответ: {nums[0]} * {nums[1]} = {nums[0] * nums[1]}";
         }
 
         //метод проверки на различные числа
