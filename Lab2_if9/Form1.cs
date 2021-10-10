@@ -44,7 +44,7 @@ namespace Lab2_if9
         //событие запрета ввода символов
         private void textBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsNumber(e.KeyChar) | Char.IsControl(e.KeyChar) | e.KeyChar == ',' | (e.KeyChar == '-'))
+            if (Char.IsNumber(e.KeyChar) || Char.IsControl(e.KeyChar) || e.KeyChar == ',' || e.KeyChar == '-')
                 return;
             else
             {
@@ -53,6 +53,7 @@ namespace Lab2_if9
             }
         }
 
+        //загрузка данных при запуске приложения 
         private void Form1_Load(object sender, EventArgs e)
         {
             textBox_firstNum.Text = Properties.Settings.Default.firstNum;
